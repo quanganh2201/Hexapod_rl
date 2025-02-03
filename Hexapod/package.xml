@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>hexapod</name>
+  <version>1.0.0</version>
+  <description>
+    <p>URDF Description package for Hexapod</p>
+    <p>This package contains configuration data, 3D models, and launch files for the Hexapod robot.</p>
+  </description>
+
+  <!-- Thông tin tác giả và người bảo trì -->
+  <author>Your Name</author>
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>BSD</license>
+
+  <!-- Công cụ xây dựng trong ROS 2 là ament_cmake -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Các phụ thuộc ROS 2 -->
+  <depend>robot_state_publisher</depend>
+  <depend>joint_state_publisher_gui</depend>
+  <depend>gazebo_ros</depend>
+  <depend>rviz2</depend>
+
+  <!-- Xuất thông tin về gói -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
