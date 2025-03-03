@@ -3,7 +3,7 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="Hexapod">
+  name="hexapod">
   <link
     name="Hexapod_Body">
     <inertial>
@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Hexapod_Body.STL" />
+          filename="package://hexapod/meshes/Hexapod_Body.STL" />
       </geometry>
       <material
         name="a">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Hexapod_Body.STL" />
+          filename="package://hexapod/meshes/Hexapod_Body.STL" />
       </geometry>
     </collision>
   </link>
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_One_Motor_One.STL" />
+          filename="package://hexapod/meshes/Leg_One_Motor_One.STL" />
       </geometry>
       <material
         name="b">
@@ -80,10 +80,11 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_One_Motor_One.STL" />
+          filename="package://hexapod/meshes/Leg_One_Motor_One.STL" />
       </geometry>
     </collision>
   </link>
+
   <joint
     name="Body_Motor_One"
     type="fixed">
@@ -119,7 +120,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_One_Joint_One.STL" />
+          filename="package://hexapod/meshes/Leg_One_Joint_One.STL" />
       </geometry>
       <material
         name="c">
@@ -133,7 +134,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_One_Joint_One.STL" />
+          filename="package://hexapod/meshes/Leg_One_Joint_One.STL" />
       </geometry>
     </collision>
   </link>
@@ -150,8 +151,8 @@
     <axis
       xyz="1 0 0" />
     <limit
-      lower="-0.87"
-      upper="0.87"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -177,7 +178,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_One_Motor_Two.STL" />
+          filename="package://hexapod/meshes/Leg_One_Motor_Two.STL" />
       </geometry>
       <material
         name="d">
@@ -191,7 +192,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_One_Motor_Two.STL" />
+          filename="package://hexapod/meshes/Leg_One_Motor_Two.STL" />
       </geometry>
     </collision>
   </link>
@@ -208,8 +209,8 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="-1.75"
-      upper="1.75"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -235,7 +236,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_One_Joint_Two.STL" />
+          filename="package://hexapod/meshes/Leg_One_Joint_Two.STL" />
       </geometry>
       <material
         name="e">
@@ -249,7 +250,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_One_Joint_Two.STL" />
+          filename="package://hexapod/meshes/Leg_One_Joint_Two.STL" />
       </geometry>
     </collision>
   </link>
@@ -288,7 +289,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_One_Motor_Three.STL" />
+          filename="package://hexapod/meshes/Leg_One_Motor_Three.STL" />
       </geometry>
       <material
         name="f">
@@ -302,7 +303,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_One_Motor_Three.STL" />
+          filename="package://hexapod/meshes/Leg_One_Motor_Three.STL" />
       </geometry>
     </collision>
   </link>
@@ -319,8 +320,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-1.2"
-      upper="1.75"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -346,7 +347,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_One_Foot.STL" />
+          filename="package://hexapod/meshes/Leg_One_Foot.STL" />
       </geometry>
       <material
         name="g">
@@ -360,7 +361,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_One_Foot.STL" />
+          filename="package://hexapod/meshes/Leg_One_Foot.STL" />
       </geometry>
     </collision>
   </link>
@@ -399,7 +400,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Two_Motor_One.STL" />
+          filename="package://hexapod/meshes/Leg_Two_Motor_One.STL" />
       </geometry>
       <material
         name="b">
@@ -413,7 +414,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Two_Motor_One.STL" />
+          filename="package://hexapod/meshes/Leg_Two_Motor_One.STL" />
       </geometry>
     </collision>
   </link>
@@ -452,7 +453,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Two_Joint_One.STL" />
+          filename="package://hexapod/meshes/Leg_Two_Joint_One.STL" />
       </geometry>
       <material
         name="c">
@@ -466,7 +467,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Two_Joint_One.STL" />
+          filename="package://hexapod/meshes/Leg_Two_Joint_One.STL" />
       </geometry>
     </collision>
   </link>
@@ -483,8 +484,8 @@
     <axis
       xyz="1 0 0" />
     <limit
-      lower="-0.87"
-      upper="0.87"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -510,7 +511,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Two_Motor_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Two_Motor_Two.STL" />
       </geometry>
       <material
         name="d">
@@ -524,7 +525,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Two_Motor_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Two_Motor_Two.STL" />
       </geometry>
     </collision>
   </link>
@@ -541,8 +542,8 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="-1.75"
-      upper="1.75"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -568,7 +569,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Two_Joint_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Two_Joint_Two.STL" />
       </geometry>
       <material
         name="e">
@@ -582,7 +583,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Two_Joint_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Two_Joint_Two.STL" />
       </geometry>
     </collision>
   </link>
@@ -621,7 +622,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Two_Motor_Three.STL" />
+          filename="package://hexapod/meshes/Leg_Two_Motor_Three.STL" />
       </geometry>
       <material
         name="f">
@@ -635,7 +636,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Two_Motor_Three.STL" />
+          filename="package://hexapod/meshes/Leg_Two_Motor_Three.STL" />
       </geometry>
     </collision>
   </link>
@@ -652,8 +653,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-1.2"
-      upper="1.75"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -679,7 +680,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Two_Foot.STL" />
+          filename="package://hexapod/meshes/Leg_Two_Foot.STL" />
       </geometry>
       <material
         name="g">
@@ -693,7 +694,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Two_Foot.STL" />
+          filename="package://hexapod/meshes/Leg_Two_Foot.STL" />
       </geometry>
     </collision>
   </link>
@@ -732,7 +733,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Three_Motor_One.STL" />
+          filename="package://hexapod/meshes/Leg_Three_Motor_One.STL" />
       </geometry>
       <material
         name="b">
@@ -746,7 +747,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Three_Motor_One.STL" />
+          filename="package://hexapod/meshes/Leg_Three_Motor_One.STL" />
       </geometry>
     </collision>
   </link>
@@ -785,7 +786,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Three_Joint_One.STL" />
+          filename="package://hexapod/meshes/Leg_Three_Joint_One.STL" />
       </geometry>
       <material
         name="c">
@@ -799,7 +800,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Three_Joint_One.STL" />
+          filename="package://hexapod/meshes/Leg_Three_Joint_One.STL" />
       </geometry>
     </collision>
   </link>
@@ -816,8 +817,8 @@
     <axis
       xyz="1 0 0" />
     <limit
-      lower="-0.87"
-      upper="0.87"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -843,7 +844,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Three_Motor_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Three_Motor_Two.STL" />
       </geometry>
       <material
         name="d">
@@ -857,7 +858,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Three_Motor_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Three_Motor_Two.STL" />
       </geometry>
     </collision>
   </link>
@@ -874,8 +875,8 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="-1.75"
-      upper="1.75"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -901,7 +902,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Three_Joint_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Three_Joint_Two.STL" />
       </geometry>
       <material
         name="e">
@@ -915,7 +916,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Three_Joint_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Three_Joint_Two.STL" />
       </geometry>
     </collision>
   </link>
@@ -954,7 +955,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Three_Motor_Three.STL" />
+          filename="package://hexapod/meshes/Leg_Three_Motor_Three.STL" />
       </geometry>
       <material
         name="f">
@@ -968,7 +969,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Three_Motor_Three.STL" />
+          filename="package://hexapod/meshes/Leg_Three_Motor_Three.STL" />
       </geometry>
     </collision>
   </link>
@@ -985,8 +986,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-1.2"
-      upper="1.75"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -1012,7 +1013,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Three_Foot.STL" />
+          filename="package://hexapod/meshes/Leg_Three_Foot.STL" />
       </geometry>
       <material
         name="g">
@@ -1026,7 +1027,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Three_Foot.STL" />
+          filename="package://hexapod/meshes/Leg_Three_Foot.STL" />
       </geometry>
     </collision>
   </link>
@@ -1065,7 +1066,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Four_Motor_One.STL" />
+          filename="package://hexapod/meshes/Leg_Four_Motor_One.STL" />
       </geometry>
       <material
         name="b">
@@ -1079,7 +1080,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Four_Motor_One.STL" />
+          filename="package://hexapod/meshes/Leg_Four_Motor_One.STL" />
       </geometry>
     </collision>
   </link>
@@ -1118,7 +1119,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Four_Joint_One.STL" />
+          filename="package://hexapod/meshes/Leg_Four_Joint_One.STL" />
       </geometry>
       <material
         name="c">
@@ -1132,7 +1133,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Four_Joint_One.STL" />
+          filename="package://hexapod/meshes/Leg_Four_Joint_One.STL" />
       </geometry>
     </collision>
   </link>
@@ -1149,8 +1150,8 @@
     <axis
       xyz="1 0 0" />
     <limit
-      lower="-0.87"
-      upper="0.87"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -1176,7 +1177,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Four_Motor_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Four_Motor_Two.STL" />
       </geometry>
       <material
         name="d">
@@ -1190,7 +1191,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Four_Motor_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Four_Motor_Two.STL" />
       </geometry>
     </collision>
   </link>
@@ -1207,8 +1208,8 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="-1.75"
-      upper="1.75"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -1234,7 +1235,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Four_Joint_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Four_Joint_Two.STL" />
       </geometry>
       <material
         name="e">
@@ -1248,7 +1249,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Four_Joint_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Four_Joint_Two.STL" />
       </geometry>
     </collision>
   </link>
@@ -1287,7 +1288,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Four_Motor_Three.STL" />
+          filename="package://hexapod/meshes/Leg_Four_Motor_Three.STL" />
       </geometry>
       <material
         name="f">
@@ -1301,7 +1302,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Four_Motor_Three.STL" />
+          filename="package://hexapod/meshes/Leg_Four_Motor_Three.STL" />
       </geometry>
     </collision>
   </link>
@@ -1318,8 +1319,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-1.2"
-      upper="1.75"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -1345,7 +1346,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Four_Foot.STL" />
+          filename="package://hexapod/meshes/Leg_Four_Foot.STL" />
       </geometry>
       <material
         name="g">
@@ -1359,7 +1360,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Four_Foot.STL" />
+          filename="package://hexapod/meshes/Leg_Four_Foot.STL" />
       </geometry>
     </collision>
   </link>
@@ -1398,7 +1399,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Five_Motor_One.STL" />
+          filename="package://hexapod/meshes/Leg_Five_Motor_One.STL" />
       </geometry>
       <material
         name="b">
@@ -1412,7 +1413,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Five_Motor_One.STL" />
+          filename="package://hexapod/meshes/Leg_Five_Motor_One.STL" />
       </geometry>
     </collision>
   </link>
@@ -1451,7 +1452,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Five_Joint_One.STL" />
+          filename="package://hexapod/meshes/Leg_Five_Joint_One.STL" />
       </geometry>
       <material
         name="c">
@@ -1465,7 +1466,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Five_Joint_One.STL" />
+          filename="package://hexapod/meshes/Leg_Five_Joint_One.STL" />
       </geometry>
     </collision>
   </link>
@@ -1482,8 +1483,8 @@
     <axis
       xyz="1 0 0" />
     <limit
-      lower="-0.87"
-      upper="0.87"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -1509,7 +1510,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Five_Motor_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Five_Motor_Two.STL" />
       </geometry>
       <material
         name="d">
@@ -1523,7 +1524,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Five_Motor_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Five_Motor_Two.STL" />
       </geometry>
     </collision>
   </link>
@@ -1540,8 +1541,8 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="-1.75"
-      upper="1.75"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -1567,7 +1568,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Five_Joint_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Five_Joint_Two.STL" />
       </geometry>
       <material
         name="e">
@@ -1581,7 +1582,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Five_Joint_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Five_Joint_Two.STL" />
       </geometry>
     </collision>
   </link>
@@ -1620,7 +1621,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Five_Motor_Three.STL" />
+          filename="package://hexapod/meshes/Leg_Five_Motor_Three.STL" />
       </geometry>
       <material
         name="f">
@@ -1634,7 +1635,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Five_Motor_Three.STL" />
+          filename="package://hexapod/meshes/Leg_Five_Motor_Three.STL" />
       </geometry>
     </collision>
   </link>
@@ -1651,8 +1652,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-1.2"
-      upper="1.75"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -1678,7 +1679,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Five_Foot.STL" />
+          filename="package://hexapod/meshes/Leg_Five_Foot.STL" />
       </geometry>
       <material
         name="g">
@@ -1692,7 +1693,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Five_Foot.STL" />
+          filename="package://hexapod/meshes/Leg_Five_Foot.STL" />
       </geometry>
     </collision>
   </link>
@@ -1731,12 +1732,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Six_Motor_One.STL" />
+          filename="package://hexapod/meshes/Leg_Six_Motor_One.STL" />
       </geometry>
       <material
-        name="b">
+        name="">
         <color
-          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -1745,7 +1746,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Six_Motor_One.STL" />
+          filename="package://hexapod/meshes/Leg_Six_Motor_One.STL" />
       </geometry>
     </collision>
   </link>
@@ -1784,7 +1785,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Six_Joint_One.STL" />
+          filename="package://hexapod/meshes/Leg_Six_Joint_One.STL" />
       </geometry>
       <material
         name="c">
@@ -1798,7 +1799,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Six_Joint_One.STL" />
+          filename="package://hexapod/meshes/Leg_Six_Joint_One.STL" />
       </geometry>
     </collision>
   </link>
@@ -1815,8 +1816,8 @@
     <axis
       xyz="1 0 0" />
     <limit
-      lower="-0.87"
-      upper="0.87"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -1842,7 +1843,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Six_Motor_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Six_Motor_Two.STL" />
       </geometry>
       <material
         name="d">
@@ -1856,7 +1857,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Six_Motor_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Six_Motor_Two.STL" />
       </geometry>
     </collision>
   </link>
@@ -1873,8 +1874,8 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="-1.75"
-      upper="1.75"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -1900,7 +1901,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Six_Joint_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Six_Joint_Two.STL" />
       </geometry>
       <material
         name="e">
@@ -1914,7 +1915,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Six_Joint_Two.STL" />
+          filename="package://hexapod/meshes/Leg_Six_Joint_Two.STL" />
       </geometry>
     </collision>
   </link>
@@ -1953,7 +1954,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Six_Motor_Three.STL" />
+          filename="package://hexapod/meshes/Leg_Six_Motor_Three.STL" />
       </geometry>
       <material
         name="f">
@@ -1967,7 +1968,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Six_Motor_Three.STL" />
+          filename="package://hexapod/meshes/Leg_Six_Motor_Three.STL" />
       </geometry>
     </collision>
   </link>
@@ -1984,8 +1985,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-1.2"
-      upper="1.75"
+      lower="-1.5"
+      upper="1.5"
       effort="1.5"
       velocity="6" />
   </joint>
@@ -2011,7 +2012,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Six_Foot.STL" />
+          filename="package://hexapod/meshes/Leg_Six_Foot.STL" />
       </geometry>
       <material
         name="">
@@ -2025,7 +2026,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Hexapod/meshes/Leg_Six_Foot.STL" />
+          filename="package://hexapod/meshes/Leg_Six_Foot.STL" />
       </geometry>
     </collision>
   </link>
@@ -2042,4 +2043,5 @@
     <axis
       xyz="0 0 0" />
   </joint>
+  
 </robot>

@@ -32,8 +32,8 @@ for i in range(0, 20):
 hexaid = p.connect(p.GUI)
 p.setGravity(0, 0, -9.81, physicsClientId = hexaid)
 p.setAdditionalSearchPath(pybullet_data.getDataPath())
-HexaPod = p.loadURDF("Hexapod.urdf", basePosition = [0, 0, 0.2])
-Plane = p.loadURDF("Plane.urdf")
+HexaPod = p.loadURDF("/home/qa/Downloads/Hexapod/hexapod/urdf/Hexapod.urdf", basePosition = [0, 0, 0.2])
+Plane = p.loadURDF("/home/qa/Downloads/Hexapod/hexapod/Plane.urdf")
 observation = np.zeros(63, dtype = "float32")
 
 joint_list = [j for j in range(p.getNumJoints(HexaPod)) if p.getJointInfo(HexaPod, j)[2] == p.JOINT_REVOLUTE]
@@ -56,6 +56,7 @@ for i in range(0, 10):
         p.stepSimulation()
         sleep(dt / frameskip)
         p.setRealTimeSimulation(0)
+print("test1")
 for n in range(0, 20):
     for i in range(0, 20):
         for j in range(0, 18):
@@ -79,6 +80,7 @@ for n in range(0, 20):
         #print(torques[15])
         #print(torques[16])
         #print(torques[17])
+print("test2")
 for i in range(0, 10):
     for j in range(0, 18):
         p.setJointMotorControl2(bodyUniqueId = HexaPod, jointIndex = joint_list[j], controlMode = p.POSITION_CONTROL, targetPosition = lpos[i][j], force = 1.5, maxVelocity = lvel[i][j])
@@ -86,3 +88,4 @@ for i in range(0, 10):
         p.stepSimulation()
         sleep(dt / frameskip)
         p.setRealTimeSimulation(0)
+print("test3")

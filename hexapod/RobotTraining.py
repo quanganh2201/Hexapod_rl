@@ -31,27 +31,27 @@ def train(env, exp_name, **kwargs):
 
 if __name__ == "__main__":
     client = p.connect(p.GUI)
-    env = HexapodBulletEnv(client, time_step = 0.25, frameskip = 60, render = False,  max_velocity = 59*2*math.pi/60, max_torque = 1.50041745)
-    train(
-        env = env,
-        exp_name = "test",
-        gamma = 0.99,
-        n_steps = 128,
-        batch_size = 32,
-        ent_coef = 0.01,
-        learning_rate = 1e-3,
-        clip_range = 0.2,
-        device = "auto",
-        _init_setup_model = True
-    )
-    client = p.connect(p.GUI)
+    # env = HexapodBulletEnv(client, time_step = 0.25, frameskip = 60, render = False,  max_velocity = 59*2*math.pi/60, max_torque = 1.50041745)
+    # train(
+    #     env = env,
+    #     exp_name = "test",
+    #     gamma = 0.99,
+    #     n_steps = 128,
+    #     batch_size = 32,
+    #     ent_coef = 0.01,
+    #     learning_rate = 1e-3,
+    #     clip_range = 0.2,
+    #     device = "auto",
+    #     _init_setup_model = True
+    # )
+    # client = p.connect(p.GUI)
     env = HexapodBulletEnv(client, time_step = 1, frameskip = 240, render = False,  max_velocity = 59*2*math.pi/60, max_torque = 1.50041745)
-    model = PPO.load("trained_models/" + "test" + "_" + str(9)) # Loading the trained model to test it after the end of the learning process
+    model = PPO.load("/home/qa/Downloads/Hexapod/Hexapod/trained_models1/trained_models/test_0.zip") # Loading the trained model to test it after the end of the learning process
     obs = env.reset()
     r = []
     t = []
     dt = 0
-    for i in range(0, 100000):
+    for i in range(0, 1000):
         action, _ = model.predict(obs)
         obs, rewards, done, info = env.step(action)
         if(done):
@@ -63,7 +63,7 @@ if __name__ == "__main__":
         print(i)
     # Plotting the reward curve
     plt.plot(t, r)
-    plt.axis([0, 10000, -60, 60])
+    plt.axis([0, 1000, -60, 60])
     plt.show()
     plt.title('PPO')
     plt.xlabel('Time Steps')
